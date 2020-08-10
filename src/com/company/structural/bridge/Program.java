@@ -1,4 +1,11 @@
 package com.company.structural.bridge;
 
-public class Program {
+public abstract class Program {
+    protected Developer developer;
+
+    protected Program(Developer developer) {
+        this.developer = developer;
+    }
+
+    abstract void developProgram();
 }
